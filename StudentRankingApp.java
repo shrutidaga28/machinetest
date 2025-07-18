@@ -108,7 +108,7 @@ public class StudentRankingApp {
         ResultSet rs = st.executeQuery("SELECT * FROM student_results ORDER BY `rank` ASC");
 
         System.out.println("\n Final Results:");
-        System.out.println("------------------------------------------------------------");
+        System.out.println("-----");
         while (rs.next()) {
             System.out.printf(
                 "ID: %d | Name: %s | Total: %.2f | Result: %s | Rank: %d\n",
@@ -119,7 +119,7 @@ public class StudentRankingApp {
                 rs.getInt("rank")
             );
         }
-        System.out.println("------------------------------------------------------------");
+        System.out.println("----");
     }
 }
 
